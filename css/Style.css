@@ -1,0 +1,152 @@
+* { 
+    margin: 0;
+    padding: 0;
+
+
+}
+
+@font-face { 
+    font-family: "fuenteAssets, e", Arial, Helvetica, sans-serif,'Times New Roman', Times, serif;
+    src: url("./../asssets/Fonts1/Merriweather-Italic.ttf"); 
+    font-size: 26px;
+} 
+
+/* body css */
+ body { 
+    background-color: rgb(236, 247, 247);
+    text-align: left;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+    position: relative;
+    padding-bottom: 2rem;
+    min-height: 100vh;
+    
+ }
+
+
+
+
+ header{ 
+    width: 100%;
+    height: 100%;
+
+    border-bottom: 1px solid rgb(129, 127, 127);
+    text-align: center;
+    
+     
+ }
+ .logo{ 
+    
+    margin-right: 90%;
+    width: 200px;
+    height: 200px;
+ }
+
+ .CarritoCompra{
+
+     width: 35px;
+     height: 35px;
+ }
+
+nav, ul, li{
+    width: 100%;
+    background-color: rgb(224, 226, 113);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+}
+
+
+a{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 22px;
+    color: rgb(136, 136, 43);
+ }
+ 
+
+ footer{
+    background-color: rgb(253, 255, 162);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: space-between;
+
+    
+
+}
+
+.videoClass{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    width: 60%;
+    margin: auto;
+    position:relative;
+    z-index: 2; 
+
+
+
+}
+
+#videoBack{ 
+    min-height: 100vh;
+    position: relative;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    background-color:1c1c1d;
+    opacity: 0,5;
+    mix-blend-mode: overlay;
+
+}
+
+.CajaTextobusqueda{
+    text-align: end;
+    background-color: rgb(233, 233, 148);
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+ 
