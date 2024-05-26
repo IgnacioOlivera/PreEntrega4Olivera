@@ -3,33 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandra Estetica Uy </title>
-    <link rel="icon" type="imgage/png" href="/asssets/sandra EsteticaUy2.png">
-     <link rel="stylesheet" href="./asssets/Fonts1/Merriweather-Italic.ttf">
-    <link rel="stylesheet" href=" link rel="preconnect href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/Style.css">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/style.css">
+   
 </head>
 <body>
     <header>
-        <div>
-            <a href="">
-                <img class="logo" src="../asssets/img/LoGo.png" alt="logowebsite">
-            </a>
-
-            <nav>
-                
-                <ul>
-                    <li><a href="./../index.html">Inicio</a></li>
-                    <li><a href="./servicios.html">Servicios</a></li>
-                    <li><a href="./contactanos.html">Contactanos</a></li>
-                    <li><a href="./agendarce.html">Agendarce</a></li>
-                    
-
+        <nav class="navbar navbar-expand-lg text-bg-dark p-3">
+            <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="#">
+               <img id="logoID" src="../assets/imagenes/LoGo.png" alt="logo">
+               <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+            </a>         
+            <div class="container-fluid">
+              <a class="navbar-brand text-white" href="#">Sandra EsteticaUY</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="./servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="./contactanos.html">Contactanos</a>
+                  </li>
+                  <li class="nav-item text-white">
+                    <a class="nav-link disabled text-white" aria-disabled="true">ESTETICA</a>
+                  </li>
                 </ul>
-            </nav>
-        </div>
+                <form class="d-flex text-white" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+         </nav>
     </header>
     <main>
 
@@ -49,18 +61,117 @@
 
 
     </main>
-    <footer>
-        <div>
-         <h3> Locales en montevideo:</h3>
-         <ol>
-             <li>Punta carretas Shopping.</li>
-             <li>Montevideo Shopping.</li>
-             <li>Nuevo Centro Shopping.</li>
-             <li>Portones Shopping.</li>
-         </ol>
-        </div>
-         <p>Sandra Estetica Uy - Todos los derechos reservados</p>
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
        
-     </footer> 
+          <div class="me-5 d-none d-lg-block">
+            <span>Conectate con nosotros :</span>
+          </div>
+          
+          <div>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+         
+        </section>
+        
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+           
+            <div class="row mt-3">
+              
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>Sandra Estetica Uy
+                </h6>
+                <p class="text-body-secondary">Profesionales hace mas de 30 años en este rubro y mejorando cada dia nuestros servicios al mas alto nivel.
+                Epacio digital creado con la idea de mostrar una gran parte de nuestros servicios y ofrecer nuestra agenda online!
+                </p>
+                  
+        
+              </div>
+      
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Products
+                </h6>
+                <p>
+                  <a href="./pages/servicios.html" class="text-reset">Belleza capilar</a>
+                </p>
+                <p>
+                  <a href="./pages/servicios.html" class="text-reset">Depilacion laser</a>
+                </p>
+                <p>
+                  <a href="./pages/servicios.html" class="text-reset">Manicura y Pedicura</a>
+                </p>
+                <p>
+                  <a href="./pages/servicios.html" class="text-reset">Spa</a>
+                </p>
+              </div>
+              
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+               
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Locales en montevideo
+                </h6>
+                <p>
+                  <a href="https://www.google.com/maps/place/Portones+Shopping/@-34.8810419,-56.0840811,17z/data=!4m14!1m7!3m6!1s0x959f86e5586fd3e1:0xbaa8aff375c84e7c!2sPortones+Shopping!8m2!3d-34.8810463!4d-56.0815062!16s%2Fg%2F11_ylq07_!3m5!1s0x959f86e5586fd3e1:0xbaa8aff375c84e7c!8m2!3d-34.8810463!4d-56.0815062!16s%2Fg%2F11_ylq07_?entry=ttu"target="_blank" class="text-reset">Portones shopping</a>
+                </p>
+                <p>
+                  <a href="https://www.google.com/maps/place/Montevideo+Shopping,+Av.+Luis+Alberto+de+Herrera,+11300+Montevideo,+Departamento+de+Montevideo/@-34.9030289,-56.1386939,17z/data=!4m15!1m8!3m7!1s0x959f813dfe129f67:0x1977504f27b93db3!2sMontevideo+Shopping,+Av.+Luis+Alberto+de+Herrera,+11300+Montevideo,+Departamento+de+Montevideo!3b1!8m2!3d-34.9032005!4d-56.1361082!16s%2Fg%2F12hpc272s!3m5!1s0x959f813dfe129f67:0x1977504f27b93db3!8m2!3d-34.9032005!4d-56.1361082!16s%2Fg%2F12hpc272s?entry=ttu" target="_blank" class="text-reset">Montevideo shopping</a>
+                </p>
+                <p>
+                  <a href="https://www.google.com/maps/place/Punta+Carretas+Shopping/@-34.9241177,-56.1611605,17z/data=!3m1!4b1!4m6!3m5!1s0x959f819d6fa00fd3:0xb24389518c0c3751!8m2!3d-34.9241221!4d-56.1585856!16s%2Fg%2F1213j9bj?entry=ttu" target="_blank" class="text-reset">Punta carretas shopping</a>
+                </p>
+                <p>
+                  <a href="https://www.google.com/maps/place/Nuevocentro+Shopping/@-34.8689368,-56.1723704,17z/data=!4m14!1m7!3m6!1s0x959f807aabfe63b1:0xb6f6776baeb3a995!2sNuevocentro+Shopping!8m2!3d-34.8689412!4d-56.1697955!16s%2Fg%2F1ygbcghpc!3m5!1s0x959f807aabfe63b1:0xb6f6776baeb3a995!8m2!3d-34.8689412!4d-56.1697955!16s%2Fg%2F1ygbcghpc?entry=ttu" target="_blank" class="text-reset">Nuevo Centro shopping</a>
+                </p>
+              </div>
+      
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+               
+                <h6 class="text-uppercase fw-bold mb-4">Contactos</h6>
+                <p><i class="fas fa-home me-3"></i> Pocitos 4450 - O'HIGGINS</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  EsteticaUySandra@gmail.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> 098 738 443</p>
+                <p><i class="fas fa-print me-3"></i> 094 333 699</p>
+              </div>
+              
+            </div>
+        
+          </div>
+        </section>
+         
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2024 Copyright:
+          <a class="text-reset fw-bold" href="https://mdbootstrap.com/">SandraEsteticaUy.com</a>
+        </div>
+        
+     </footer>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+     </script>
 </body>
 </html>
