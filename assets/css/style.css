@@ -1,16 +1,24 @@
-.body{ 
+body{ 
   min-height: 100vh;
   overflow-x: hidden;
 
     
 }
 
-#logoID{ 
+.logoID{ 
     height: 80px;
     width: 80px;
-  
-    
 }
+
+@media (min-width: 767.98px){ 
+  .logoID{
+   align-items: center;
+   size: 54px;
+
+  }
+
+}
+    
 
 *{ 
   font-family: Arial, Helvetica, sans-serif;
@@ -82,5 +90,34 @@ video{
   size: 4px;
   border: solid black;
   
+
+}
+#formContacto{
+  width: 75%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  padding: 40px 50px;
+  box-shadow:0 0 10px rgba(0,0,0,0.2) ;
+  backdrop-filter: blur(20px);
+  background-color: transparent;
+  border: 2px solid rgba( 255, 255, 255,0.2);
+  border-radius: 10px;
+  
+  
+
+}
+#fondoContact{
+  background-image:url(../imagenes/pexels-n-voitkevich-8468161.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 2;
+
+
+}
+.footerclass{
+   text-align: center;
+   text-decoration: none;
 
 }
