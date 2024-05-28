@@ -37,6 +37,7 @@ body{
 .carousel-item{ 
   height: 80vh;
   min-height: 300px;
+  box-shadow: 1px black;
 }
 
 
@@ -371,5 +372,16 @@ video{
   text-align: center;
   color: #000000;
 
+
+}
+
+
+
+.SERV{
+  background-image: url(../imagenes/pexels-enginakyurt-3356170.jpg);
+}
+.card2{
+width: 200px;
+height: 200px;
 
 }
