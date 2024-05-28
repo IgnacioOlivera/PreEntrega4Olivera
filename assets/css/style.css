@@ -183,6 +183,8 @@ video{
 
 }
 .card{
+  margin-left: 15px;
+  margin-right: 15px;
   font-weight: normal;
   font-size: 18px;
   font-family: 'Times New Roman', Times, serif;
@@ -195,6 +197,7 @@ video{
   cursor: pointer;
   transition: all 400ms ease;
   align-items: center;
+
 
 }
 
@@ -229,6 +232,144 @@ video{
   background-attachment: fixed;
   background-size: cover;
   z-index: 2;
+
+
+}
+
+.container2 {
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    padding:20px;
+    gap:10px;
+    width: 1000px;
+}
+
+.box-info2 {
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+.box-info2 > h1 {
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+.data2 {
+    display: flex;
+    flex-direction: column;
+    gap:25px
+}
+
+.data2 > p {
+    font-size: 1rem;
+}
+
+.data2 > p > i {
+    color:crimson;
+    margin-right: 10px;
+    font-size:25px;
+}
+
+
+.form2 {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap:15px;
+}
+
+.input-box2 {
+    position:relative;
+}
+
+.input-box2 > input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline:none;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    transition:.3s;
+    color:#fff;
+    
+}
+
+.input-box2 > input::placeholder,
+.input-box2 > textarea::placeholder {
+    color:#a3a3a3;
+    
+}
+
+.input-box2 > input:focus::placeholder,
+.input-box2 > textarea:focus::placeholder {
+    color:transparent;
+}
+
+.input-box2 > input:focus,
+.input-box2 > textarea:focus {
+    border-bottom:3px solid rgb(220, 190, 20);
+    animation: shake .2s;
+}
+
+.input-box2 > textarea {
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    outline: none;
+    transition:.3s;
+    color:#fff;
+    letter-spacing: 1.5px;
+}
+
+
+.input-box2 > i {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color:rgba(255 255 255 / .3);
+    transition: .3s;
+}
+
+.input-box2 > input:focus ~ i {
+    color:rgb(220, 190, 20);
+}
+
+.form2 > button {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background: rgb(219, 148, 17);
+    color:#fff;
+    border:none;
+    transition: .1s;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.form2 > button:hover,
+.links > a:hover {
+    background: rgb(73, 151, 190);
+}
+
+#agendaSelect{
+  background-color:rgba(255 255 255 / .1) ;
+  color: #fff;
+  text-align: center;
+
+  
+
+
+}
+.optionClass{
+  text-align: center;
+  color: #000000;
 
 
 }

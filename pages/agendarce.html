@@ -36,73 +36,84 @@
               </div>
             </div>
          </nav>
-    </header>
-    <div>
-        <h3>
-        Nosotros brindamos un servicio particular a cada cliente.  </h3>
-        <p>
-        Ademas de visitarnos en nuestro local, Puedes optar por la atencion a domicilio
-        los clientes de confianza tienen ese beneficio. 
-        Si lo eres  y deseas este servicio debes contactarte con nosotros .</p>
-        <p>Hazlo aqui! 
-            <a href="./contactanos.html">Servicio personal</a>
-
-        </p>
-
-    </div>
-    <hr>
-    <main>
-        <div>
-            <h1>Agendate Online! Rapido y facil.
-
-            </h1>
-            <h2>Elige el dia y hora mas adecuados para ti, que se encuentre disponible</h2>
-        
-            <p>Debes rellerar todos los datos requeridos y te llegara al @mail una confirmacion de turno concedido.
-               Muchas gracias! nos vemos pronto.
-            </p>
-        
-            <form>
-                <label for="Nombre">Nombre (requerido)</label> 
-                <input type="text" id="Nombre" name="fielNombre" placeholder="Nombre" required>
-
-                <label for="">email (requerido)</label>
-                <input id="EmailUser"  type="email" name="fielEmailUser" placeholder="Example@gmail.com" required>
-
-                <select name="userServicio" id="userServicio">
-                    <option value="none">Catalogo</option>
-                    <option value="Ec">Estetica Capilar</option>
-                    <option value="Man">Manicura</option>
-                    <option value="Ped">Pedicura</option>
-                    <option value="Dep">Depilacion</option>
-                    </select>
-                <label for="userServicio">Elige el Servicio</label>
-            
-                <input type="date" name="UserDate"
-                id="fielUserDate" placeholder="Elige una fecha">
-                <label for="date">Elige dia y hora</label>
-
-
-
-
-
-
-
-            </form>
-            
-            
-    
-        
-            
-
-
-
-
-
-
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Selecciona un dia y una hora.</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form> 
+                  <input type="datetime-local" class="form-control">
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Agendar</button>
+              </div>
+            </div>
+          </div>
         </div>
+              <div class="container2">
+                  <div class="box-info2">
+                      <h1>AGENDATE ONLINE</h1>
+                      <div class="card">
+                        <div class="card-header">
+                          Haz click en CALENDARIO para desplegarlo!
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Elige aqui el dia y la hora</h5>
+                          <p class="card-text">Reserva tu turno con nosotros ahora. Te esperamos!</p>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Calendario
+                          </button>
+                        </div>
+                      </div>
+                      
+                  </div>
+                  <form class="form2">
+                      <div class="input-box2">
+                          <input type="text" placeholder="Nombre y apellido" required>
+                          <i class="fa-solid fa-user"></i>
+                      </div>
+                      <div class="input-box2">
+                          <input type="email" required placeholder="Correo electrónico">
+                          <i class="fa-solid fa-envelope"></i>
+                      </div>
+                      <div class="input-box2">
+                          <input type="text" placeholder="Asunto">
+                          <i class="fa-solid fa-pen-to-square"></i>
+                          <div class="input-box2">
+                            <label for="validationCustom04" class="form-label">Que Servicio deseas.</label>
+                            <select id="agendaSelect" class="form-select" id="validationCustom04" required>
+                              <option class="optionClass" selected disabled value="">Servicios</option>
+                              <option class="optionClass">Belleza Capilar</option>
+                              <option class="optionClass">Depilacion laser</option>
+                              <option class="optionClass">Manicura y Pedicura</option>
+                              <option class="optionClass">Spa</option>
+                            </select>
+                            <div class="invalid-feedback">
+                              porfavor selecciona un area valida.
+                            </div>
+                          </div>
+                      </div>
+                      <div class="input-box2">
+                          <textarea placeholder="Escribe tu mensaje..."></textarea>
+                      </div>
+                      <button type="submit">AGENDAR TURNO</button>
+                  </form>
+              </div>
+       
+   
 
-    </main>
+
+
+
+
+
+          
+   
     <footer class="text-center text-lg-start bg-dark text-white">
   
       <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
