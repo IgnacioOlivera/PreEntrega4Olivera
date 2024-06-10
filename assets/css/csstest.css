@@ -1,0 +1,47 @@
+
+@keyframes show {
+    from{
+      opacity: 0;
+      scale: 25%;
+    }
+    
+    to{ 
+      opacity: 1;
+      scale: 100%;
+  
+    }
+  
+  }
+  
+  .cajaref1 {
+    view-timeline-name: --p;
+    view-timeline-axis: block;
+    
+    animation-timeline: --p;
+    animation-name: show;
+  
+   }
+   
+.button2{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fcfcfc;
+    background-size: 300%;
+    background-image: linear-gradient(to right, #279cff,#9f07ff,#9f07ff,#279cff);
+    transition: all .5s;
+     
+    }
+    .button2:hover{
+      background-position: 100%;
+    
+    }
+    
