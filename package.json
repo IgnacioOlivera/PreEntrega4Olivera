@@ -1,0 +1,19 @@
+{
+  "name": "preentrega2olivera",
+  "version": "1.0.0",
+  "description": "sass en mi proyecto",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sass",
+    "css",
+    "scss",
+    "procesador",
+    "styles",
+    "node"
+  ],
+  "author": "Ignacio Olivera",
+  "license": "ISC"
+}
