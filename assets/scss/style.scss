@@ -33,11 +33,11 @@ body{
     padding: 70px 0;
   }
   
-  
   .carousel-item{ 
+    width: 100%;
     height: 80vh;
     min-height: 300px;
-    box-shadow: 1px black;
+    
   }
   
   
@@ -58,15 +58,15 @@ body{
     width: 70%;
     margin: auto;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    color:#fcfcfc ;
-    text-shadow: 0 0 5px #0609d3,
-    0 0 25px #3305da,
-    0 0 50px #3305da,
-    0 0 100px #3305da;
+    color:#000000 ;
+    text-shadow: 0 0 5px #e2dcdc,
+    0 0 25px #9c9898,
+    0 0 50px #969191,
+    0 0 100px #b3b0b0;
     cursor: pointer;
     text-transform: uppercase;
     transition: 1sg;
@@ -75,14 +75,18 @@ body{
   
   }
   .carousel img {
-    opacity:0,5;
-  
-  
+    box-shadow:0 0 5px 10px rgba(0,0,0,0.2) ;
+    backdrop-filter: blur(150px);
+    opacity: 1;
+    border-top: 2px solid rgba(3, 3, 3, 0.2);
+    
+    
   
   
   }
   
   .carousel-innier::before{
+
   
     position: absolute;
     width: 100%;
@@ -192,9 +196,10 @@ body{
       background-position: 100%;
     
     }
-  
+
   .card{
-    margin-left: 15px;
+    align-items:center ;
+    margin-left: 40px;
     margin-right: 15px;
     font-weight: normal;
     font-size: 18px;
@@ -202,24 +207,28 @@ body{
     text-align: center;
     letter-spacing: 0.1px;
     overflow: hidden;
-    background: #fff;
-    border-radius: 6px;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: 0.5s ease;
     cursor: pointer;
-    transition: all 400ms ease;
-    align-items: center;
+   
   
+    
   
   }
+  .CWH{
+    width: 350px;
+    height: 600px;
+  }
   
-  .card:hover{
-    box-shadow: 10px 10px 40px rgba(0, 0,0, 0.4),
-    0 0 25px rgba(129, 127, 127, 0.4),
-    0 0 50px rgba(223, 220, 220, 0.4),
-    0 0 100px rgba(233, 231, 231, 0.4);
-  
-  
-  
+  .card:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
   }
   
   #formContacto{
@@ -714,3 +723,41 @@ body{
   
   }
   
+  .adsSlider{
+    
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+  
+
+  }
+  .adsSlider .adsSlider-track{
+    display: flex;
+    -webkit-animation:scroll 40s linear infinite;
+    animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+
+
+  }
+  .adsSlider .adsSlide{
+    width: 200px;
+
+
+  }
+  .adsSlider .adsSlide img{ 
+    width: 100%;
+  }
+
+  @keyframes scroll {
+    0%{
+      -webkit-transform:translateX(0);
+      transform:translateX(0);
+      
+    }
+    100%{ 
+      -webkit-transform:translateX(calc(-200px * 7)) ;
+      transform:translateX(calc(-200px * 7))
+      
+    }
+  }
