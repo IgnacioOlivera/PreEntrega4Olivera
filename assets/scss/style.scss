@@ -7,6 +7,7 @@ body{
     background-attachment: fixed;
     background-size: cover;
     z-index: 2;
+   
   
   }
   
@@ -37,7 +38,8 @@ body{
     width: 100%;
     height: 80vh;
     min-height: 300px;
-    
+    border-radius: 5px;
+    border: solid 5px black;
   }
   
   
@@ -49,9 +51,11 @@ body{
     text-align: center;
     text-transform: uppercase;
     text-decoration: solid;
-    text-shadow:3px 3px 3px 2px;
-    color: black;
-  
+    color:#000000 ;
+    text-shadow: 0 0 5px #141414,
+    0 0 25px #969191,
+    0 0 50px #969191,
+    0 0 100px #000000;
    }
   
   .carousel-caption p{ 
@@ -62,11 +66,11 @@ body{
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    color:#000000 ;
-    text-shadow: 0 0 5px #e2dcdc,
-    0 0 25px #9c9898,
-    0 0 50px #969191,
-    0 0 100px #b3b0b0;
+    color:#f8f2f2 ;
+    text-shadow: 0 0 5px #141414,
+    0 0 25px #111111,
+    0 0 50px #111111,
+    0 0 100px #f1efef;
     cursor: pointer;
     text-transform: uppercase;
     transition: 1sg;
@@ -75,10 +79,11 @@ body{
   
   }
   .carousel img {
-    box-shadow:0 0 5px 10px rgba(0,0,0,0.2) ;
-    backdrop-filter: blur(150px);
-    opacity: 1;
-    border-top: 2px solid rgba(3, 3, 3, 0.2);
+    box-shadow:5px 5px 5px 5px rgba(0,0,0,0.2) ;
+    backdrop-filter: blur(20px);
+    opacity: 0.9;
+    border-top: 1px solid rgba(3, 3, 3, 0.2);
+
     
     
   
@@ -145,6 +150,10 @@ body{
     mix-blend-mode: overlay;
   
   }
+  .videoMain{ 
+    opacity: 0.9;
+    
+  }
   .videoText{
    margin-top: 8%;
    font-size: 2.5rem;
@@ -164,10 +173,10 @@ body{
   }
   .videoText:hover{
     color:#fff;
-    text-shadow: 0 0 5px #03e9f4,
-    0 0 25px #03e9f4,
-    0 0 50px #03e9f4,
-    0 0 100px #03e9f4;
+    text-shadow: 0 0 5px #f4c803,
+    0 0 25px #f4c803,
+    0 0 50px #f4c803,
+    0 0 100px #f4c803;
   
   
   }
@@ -206,7 +215,8 @@ body{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     letter-spacing: 0.1px;
-    overflow: hidden;
+    overflow-x: hidden;
+    box-sizing: border-box;
     border-radius: 18px;
     background: white;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
@@ -220,6 +230,16 @@ body{
   
     
   
+  }
+ 
+  .card p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+
+
+
+
   }
   .CWH{
     width: 350px;
@@ -243,8 +263,16 @@ body{
     border-radius: 10px;
     
     
-  
   }
+
+  .textContactos{
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: larger;
+   text-align: center;
+   text-shadow: 1px 1px 1px 1px color#000000;
+  }
+  
+
   #fondoContact{
     background-image:url(../imagenes/pexels-tamanna-rumee-52377920-7984845.jpg);
     background-repeat: no-repeat;
@@ -262,6 +290,7 @@ body{
       padding:20px;
       gap:10px;
       width: 1000px;
+
   }
   
   .box-info2 {
@@ -375,7 +404,7 @@ body{
   
   .form2 > button:hover,
   .links > a:hover {
-      background: rgb(73, 151, 190);
+      background-color: rgba(110, 110, 110, 0.795);
   }
   
   #agendaSelect{
@@ -395,32 +424,23 @@ body{
   }
   
   
-  
-  .SERV{
-    background-image: url(../imagenes/pexels-enginakyurt-3356170.jpg);
-  }
-  .card2{
-  width: 200px;
-  height: 200px;
-  
-  }
-  #h2serv{
-    font-size: 25px ;
-    text-align: center;
-    text-shadow: 1px 1px 1px;
-    text-transform: uppercase;
-  
-  
-  }
-  
   .TituloeRef{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    width: 100%;
+    margin: auto;
+    margin-top:6%;
+    position:relative;
     text-align: center;
-    color: #fff;
+    
+   
   
   }
   .TituloeRef ul{
     position: absolute;
-    margin-top: 5px;
+    margin-top: 45px;
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -514,23 +534,19 @@ body{
     animation-delay: 1.6s;
   }
   
-  
-  
-  
+
   .Referencias{
-    background-image: none;
     padding: 35px;
-    margin: 35px;
-    margin-top: 5%;
+    margin-top: 1%;
     color: #fff;
     display: grid;
     grid-template-columns: repeat(2, 600px);
     grid-gap: 1rem;
     justify-items: center;
     justify-content: center;
-  
     text-align: center;
-  
+    margin: auto;
+    
   }
   .Referencias .cajaref-container .cajaref1{
     font-family: 'Times New Roman', Times, serif;
@@ -544,6 +560,14 @@ body{
     border-radius: 10px;
     justify-content: center;
     justify-items: center;
+    width: 570px;
+    height: auto;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 40px;
+     
+    
+    
   }
   
   
@@ -583,8 +607,9 @@ body{
     width: 80px;
     height: 80px;
    
-  
+   
   }
+
   @keyframes show {
     from{
       opacity: 0;
@@ -600,17 +625,95 @@ body{
   }
   
   .cajaref1 {
-    view-timeline-name: --p;
+    view-timeline-name: --image;
     view-timeline-axis: block;
     
-    animation-timeline: --p;
+    animation-timeline: --image;
     animation-name: show;
+
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
   
-   }
+  }
+
+  /*Servicios */
+
+  .ContenedorServicos{
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    margin: auto;
+  
+    
+
+  }
+
+  .servMain{
+    margin-top: 8%;
+    
+  }
+  .CWH2{
+    width: 280px;
+    height: 460px;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+
+  
+  .SERV{
+    background-image: url(../imagenes/pexels-enginakyurt-3356170.jpg);
+  }
+  .card2{
+    margin-left: 18%;
+    justify-content: center;
+    font-weight: normal;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    letter-spacing: 0.1px;
+    overflow-x: hidden;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: 0.5s ease;
+    cursor: pointer;
+   
+  
+  }
+  .card2:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+
+  #h2serv{
+    font-size: 25px ;
+    text-align: center;
+    text-shadow: 1px 1px 1px;
+    text-transform: uppercase;
+  
+  
+  }
+
   
    .TituloeServ{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    width: 100vw;
+    margin: auto;
+    margin-top:6%;
+    position:relative;
     text-align: center;
     color: #fff;
+    
   
   }
   .TituloeServ ul{
@@ -718,7 +821,8 @@ body{
   }
   
   .services{
-    margin-top: 150px
+    margin-top: 8%;
+    margin-bottom: 6%;
   
   
   }
@@ -727,8 +831,9 @@ body{
     
     width: 100vw;
     height: auto;
-    margin: auto;
-    overflow: hidden;
+    overflow-x: hidden;
+  
+    
   
 
   }
@@ -761,3 +866,240 @@ body{
       
     }
   }
+  .adsContainer img{
+    height: 80px;
+    opacity: 0.6;
+   
+
+  }
+  .adsContainerIndx img{
+    opacity: 0.4;
+    border: 1px solid rgb(7, 7, 7);
+  }
+
+  /* Responsive agenda*/
+  @media screen and (max-width: 992px){
+    .container2{
+      display:grid;
+      grid-template-columns:repeat(1,100%);
+      
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      width: 80%;
+      margin: auto;
+      margin-bottom: 35px;
+      
+
+    }
+    .box-info2{
+      width: 100%;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      margin: auto;
+      margin-bottom: 25px;
+
+
+
+    }
+  }
+    @media screen and (max-width: 490px){
+      .container2{
+        display:grid;
+        grid-template-columns:repeat(1,100%);
+        
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 35px;
+        
+  
+      }
+      .box-info2{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 25px;
+        font-size: 14px;
+  
+  
+  
+      }
+      .box-info2 h1{
+        text-align: center;
+        
+
+
+
+
+      }
+      
+
+  }
+  /* Responsive Referencias*/
+  @media screen and (max-width: 992px){
+    .body{
+      overflow-x: hidden;
+
+
+    }
+    .Referencias{
+      display: grid;
+      grid-template-columns: repeat(1,600px);
+      grid-gap: 1rem;
+      justify-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+      height: auto;
+      
+    }
+    .cajaref1{
+      width: auto;
+
+
+    }
+    
+    .TituloeRef{
+      display: grid;
+      grid-template-columns: repeat(1,100%);
+      text-align: center;
+      color: #fff;
+      
+    }
+    @keyframes show {
+      from{
+        opacity: 0;
+        scale: 25%;
+      }
+      
+      to{ 
+        opacity: 1;
+        scale: 80%;
+    
+      }
+    
+    }
+    
+    .cajaref1 {
+      view-timeline-name: --image;
+      view-timeline-axis: block;
+      
+      animation-timeline: --image;
+      animation-name: show;
+  
+      animation-range: entry 25% cover 50%;
+      animation-fill-mode: both;
+    
+    }
+
+
+
+  }
+  @media screen and (max-width:576px){
+    .body{
+      overflow-x: hidden;
+      
+
+
+    }
+    .Referencias{
+      display: grid;
+      grid-template-columns: repeat(1,600px);
+      grid-gap: 1rem;
+      justify-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+      height: auto;
+      
+    }
+    .cajaref1{
+      width: 15%;
+      height: auto;
+
+
+    }
+    @keyframes show {
+      from{
+        opacity: 0;
+        scale: 15%;
+      }
+      
+      to{ 
+        opacity: 1;
+        scale: 80%;
+    
+      }
+    
+    }
+    
+    .cajaref1 {
+      view-timeline-name: --image;
+      view-timeline-axis: block;
+      
+      animation-timeline: --image;
+      animation-name: show;
+  
+      animation-range: entry 25% cover 50%;
+      animation-fill-mode: both;
+    
+    }
+
+  }
+
+   /* Responsive Services*/
+
+   @media screen and (max-width: 992px){
+    .CWH2{
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      margin-bottom: 5%;
+      width: 60%;
+      height: 40%;
+      margin-top: 8%;
+
+      
+    }
+    .servMains{
+      align-items: center;
+      justify-content: center;
+      
+
+
+    }
+    .col2{
+      margin-bottom: 8%;
+
+
+    }
+    .card-body h5{ 
+      font-size:35px;
+      margin-bottom: 3%;
+    }
+    .card-body{ 
+      font-size:25px;
+      height: min-content;
+    }
+    .TituloeServ ul li{
+      margin-top: 8%;
+      list-style: none;
+      font-weight: 500;
+      font-size: 9vw;
+      letter-spacing: 2.5vw;
+  }
+    .btonServ a{
+      font-size: 27px;
+      align-items: center;
+      margin-bottom: 2%;
+      
+    
+    }
+  }
+   
