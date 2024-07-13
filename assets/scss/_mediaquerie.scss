@@ -379,41 +379,62 @@
 
   }
   @media screen and (max-width:576px){
-    .body{
-        overflow-x: hidden;
-  
-      }
+
       .Referencias{
+        margin-top: 1%;
         display: grid;
-        grid-template-columns: repeat(1,500px);
+        grid-template-columns: repeat(1,600px);
         grid-gap: 1rem;
         justify-items: center;
         justify-content: center;
         text-align: center;
-        margin: auto;
         height: auto;
         
       }
       .cajaref1{
         width: auto;
       }
-      
+    
       .TituloeRef{
-        display: grid;
-        grid-template-columns: repeat(1,100%);
-        text-align: center;
-        color: $whiteleters;
+        
+    
+        @include AnimatedTitle;
+          
+          ul{
+            height: auto;
+            width: auto;
+            position: relative;
+            text-align: center;
+            margin-top: 15%;
+            margin-right: 50%;
+            margin-bottom: auto;
+            font-size: 28px;
+            transform: translate(-50%, -50%);
+            display: flex; 
+          }
+               li{
+                list-style: none;
+                font-weight: 900;
+                font-size: 28px;
+                letter-spacing: 2.5vw;
+                color: $animLetersbg;
+                text-shadow: none;
+                animation: anim 1s infinite linear;
+              }
+        
+      }
+      
         
       }
       @keyframes show {
         from{
           opacity: 0;
-          scale: 25%;
+          scale: 60%;
         }
         
         to{ 
           opacity: 1;
-          scale: 60%;
+          scale: 80%;
       
         }
       
@@ -425,14 +446,10 @@
         
         animation-timeline: --image;
         animation-name: show;
-    
-        animation-range: entry 25% cover 50%;
-        animation-fill-mode: both;
       
-      }
-  
     }
-
+  
+    
  /* Responsive Services*/
 
  @media screen and (max-width: 992px){
