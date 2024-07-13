@@ -1,6 +1,7 @@
 /*Colores*/
+/*Fuentes*/
 /*Mixin generales*/
-/*Mixing titulos Animados*/
+/*Mixin titulos Animados*/
 /*Mixin especificos*/
 body {
   min-height: 100vh;
@@ -55,10 +56,9 @@ body {
 .carousel-caption p {
   width: 70%;
   margin: auto;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: 600;
   font-size: 30px;
-  font-family: "Times New Roman", Times, serif;
   text-align: center;
   color: #fff;
   text-shadow: 0 0 5px #141414, 0 0 25px #111111, 0 0 50px #111111, 0 0 100px #f1efef;
@@ -87,6 +87,7 @@ body {
   margin-top: 35px;
 }
 
+/*Video*/
 .videoClass {
   display: flex;
   flex-direction: column;
@@ -97,6 +98,22 @@ body {
   position: relative;
   z-index: 2;
   color: black;
+}
+.videoClass .videoText {
+  margin-top: 8%;
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  text-shadow: 2px 1px 1px 1px;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 1sg;
+}
+.videoClass .videoText:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #f4c803, 0 0 25px #f4c803, 0 0 50px #f4c803, 0 0 100px #f4c803;
 }
 
 #videoBack {
@@ -126,28 +143,6 @@ video {
 
 .videoMain {
   opacity: 0.9;
-}
-
-.videoText {
-  margin-top: 8%;
-  font-size: 2.5rem;
-  font-weight: 900;
-  font-family: "Times New Roman", Times, serif;
-  color: black;
-  text-shadow: 2px 1px 1px 1px;
-  text-align: center;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: 1sg;
-}
-
-#pt1 {
-  margin-top: 5%;
-}
-
-.videoText:hover {
-  color: #fff;
-  text-shadow: 0 0 5px #f4c803, 0 0 25px #f4c803, 0 0 50px #f4c803, 0 0 100px #f4c803;
 }
 
 .buttonV {
@@ -188,7 +183,6 @@ video {
   border-radius: 18px;
   background: white;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-  font-family: roboto;
   text-align: center;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -221,7 +215,7 @@ video {
 }
 
 .textContactos {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: larger;
   text-align: center;
   text-shadow: 1px 1px 1px 1px color #000000;
@@ -607,7 +601,6 @@ video {
   position: relative;
   text-align: center;
 }
-
 .TituloeServ ul {
   position: absolute;
   margin-top: 5px;
@@ -616,8 +609,7 @@ video {
   transform: translate(-50%, -50%);
   display: flex;
 }
-
-.TituloeServ ul li {
+.TituloeServ li {
   list-style: none;
   font-weight: 500;
   font-size: 5vw;
@@ -744,6 +736,229 @@ video {
   border: 1px solid rgb(7, 7, 7);
 }
 
+/* Responsive index*/
+@media screen and (max-width: 992px) {
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .Idexbody {
+    overflow-x: hidden;
+    min-width: 100%;
+  }
+  .videoClass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    color: black;
+  }
+  .videoClass .videoText {
+    margin-top: 15%;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+    text-shadow: 2px 1px 1px 1px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 1sg;
+  }
+  .videoClass .videoText:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #f4c803, 0 0 25px #f4c803, 0 0 50px #f4c803, 0 0 100px #f4c803;
+  }
+  #videoBack {
+    min-height: 100vh;
+    position: relative;
+  }
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: 1c1c1d;
+    opacity: 1, 5;
+    mix-blend-mode: overlay;
+  }
+  .videoMain {
+    opacity: 0.9;
+  }
+  .carousel-item {
+    width: 100%;
+    height: 50vh;
+    min-height: 300px;
+    border-radius: 5px;
+    border: solid 5px black;
+  }
+  .carousel-caption h5 {
+    font-size: 30px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: solid;
+    color: black;
+    text-shadow: 0 0 5px #141414, 0 0 25px #969191, 0 0 50px #969191, 0 0 100px #000000;
+  }
+  .carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 5px #141414, 0 0 25px #111111, 0 0 50px #111111, 0 0 100px #f1efef;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 1sg;
+  }
+  .carousel-caption img {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    opacity: 0.9;
+    border-top: 1px solid rgba(3, 3, 3, 0.2);
+  }
+  .carousel-innier::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 30, 82, 0.327);
+    z-index: 1;
+  }
+  .carousel-control {
+    margin-top: 35px;
+  }
+  .card {
+    align-items: center;
+    margin: 0;
+    margin-left: 12%;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    width: 75%;
+    letter-spacing: 0.1px;
+    box-sizing: border-box;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  .card-body h5 {
+    font-size: 11px;
+  }
+  .card-body P {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  * {
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  .videoClass {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    color: black;
+  }
+  .videoClass .videoText {
+    margin-top: 25%;
+    font-size: 1.7rem;
+    font-weight: 900;
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+    text-shadow: 2px 1px 1px 1px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 1sg;
+  }
+  .videoClass .videoText:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #f4c803, 0 0 25px #f4c803, 0 0 50px #f4c803, 0 0 100px #f4c803;
+  }
+  #videoBack {
+    height: 60%;
+    position: relative;
+  }
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: 1c1c1d;
+    opacity: 1, 5;
+    mix-blend-mode: overlay;
+  }
+  .videoMain {
+    opacity: 0.9;
+  }
+  .card {
+    align-items: center;
+    margin: 0;
+    margin-left: 12%;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    width: 70%;
+    letter-spacing: 0.1px;
+    box-sizing: border-box;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  .card-body h5 {
+    font-size: 11px;
+  }
+  .card-body P {
+    font-size: 14px;
+  }
+}
 /* Responsive agenda*/
 @media screen and (max-width: 992px) {
   .container2 {
@@ -838,7 +1053,7 @@ video {
   }
   .Referencias {
     display: grid;
-    grid-template-columns: repeat(1, 600px);
+    grid-template-columns: repeat(1, 500px);
     grid-gap: 1rem;
     justify-items: center;
     justify-content: center;
@@ -847,17 +1062,22 @@ video {
     height: auto;
   }
   .cajaref1 {
-    width: 15%;
-    height: auto;
+    width: auto;
+  }
+  .TituloeRef {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    text-align: center;
+    color: #fff;
   }
   @keyframes show {
     from {
       opacity: 0;
-      scale: 15%;
+      scale: 25%;
     }
     to {
       opacity: 1;
-      scale: 80%;
+      scale: 60%;
     }
   }
   .cajaref1 {
@@ -877,7 +1097,7 @@ video {
     margin: auto;
     margin-bottom: 5%;
     width: 60%;
-    height: 40%;
+    height: 100%;
     margin-top: 8%;
   }
   .servMains {
@@ -891,9 +1111,8 @@ video {
     font-size: 35px;
     margin-bottom: 3%;
   }
-  .card-body {
-    font-size: 25px;
-    height: min-content;
+  .card-body p {
+    font-size: 24px;
   }
   .TituloeServ ul li {
     margin-top: 8%;
@@ -903,7 +1122,66 @@ video {
     letter-spacing: 2.5vw;
   }
   .btonServ a {
-    font-size: 27px;
+    font-size: 25px;
+    align-items: center;
+    margin-bottom: 2%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .TituloeServ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin: auto;
+    margin-top: 6%;
+    position: relative;
+    text-align: center;
+  }
+  .TituloeServ ul {
+    position: relative;
+    text-align: center;
+    margin-top: 15%;
+    margin-right: 40%;
+    margin-bottom: auto;
+    font-size: 28px;
+    transform: translate(-50%, -50%);
+    display: flex;
+  }
+  .TituloeServ li {
+    list-style: none;
+    font-weight: 500;
+    font-size: 28px;
+    letter-spacing: 2.5vw;
+    color: #555;
+    text-shadow: none;
+    animation: anim 1s infinite linear;
+  }
+  .CWH2 {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+    width: 80%;
+    height: 100%;
+    margin-top: 8%;
+  }
+  .servMains {
+    align-items: center;
+    justify-content: center;
+  }
+  .col2 {
+    margin-bottom: 8%;
+  }
+  .card-body h5 {
+    font-size: 21px;
+    margin-bottom: 3%;
+  }
+  .card-body p {
+    font-size: 14px;
+  }
+  .btonServ a {
+    font-size: 18px;
     align-items: center;
     margin-bottom: 2%;
   }

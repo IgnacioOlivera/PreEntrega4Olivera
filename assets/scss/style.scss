@@ -1,5 +1,7 @@
+
 @import "variables";
 @import "mixins.scss";
+
 
 
 body{ 
@@ -22,7 +24,7 @@ body{
       
   
   *{ 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:$font-Secondary;
   
   }
   
@@ -41,7 +43,7 @@ body{
   .carousel-caption {
     h5 {
     font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: $font-Default;
     font-weight: normal;
     text-align: center;
     text-transform: uppercase;
@@ -55,10 +57,9 @@ body{
        p{ 
         width: 70%;
         margin: auto;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: $font-Default;
         font-weight: 600;
         font-size: 30px;
-        font-family: 'Times New Roman', Times, serif;
         text-align: center;
         color:$whiteleters ;
         text-shadow: 0 0 5px #141414,
@@ -93,6 +94,7 @@ body{
     
   }
 
+  /*Video*/
   .videoClass{
     display: flex;
     flex-direction: column;
@@ -102,15 +104,35 @@ body{
     margin: auto;
     position:relative;
     z-index: 2; 
-    color:$blackleters;
-  
+    color:$blackleters; 
+    
+       .videoText{ 
+        margin-top: 8%;
+        font-size: 2.5rem;
+        font-weight: 900;
+        font-family: $font-Default;
+        color:$blackleters ;
+        text-shadow: 2px 1px 1px 1px;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: 1sg;
+         
+          
+        &:hover{
+          color:#fff;
+          text-shadow: 0 0 5px #f4c803,
+          0 0 25px #f4c803,
+          0 0 50px #f4c803,
+          0 0 100px #f4c803;
+        }
+       }
+   
   }
-  
   #videoBack{ 
     min-height: 100vh;
     position: relative;
   }
-  
   video{
     position: absolute;
     top: 0;
@@ -118,6 +140,7 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+        
   }
   
   .capa{
@@ -134,32 +157,6 @@ body{
   .videoMain{ 
     opacity: 0.9;
     
-  }
-  .videoText{
-   margin-top: 8%;
-   font-size: 2.5rem;
-   font-weight: 900;
-   font-family: 'Times New Roman', Times, serif;
-   color:$blackleters ;
-   text-shadow: 2px 1px 1px 1px;
-   text-align: center;
-   cursor: pointer;
-   text-transform: uppercase;
-   transition: 1sg;
-  }
-  #pt1{
-    margin-top: 5%;
-  
-  
-  }
-  .videoText:hover{
-    color:#fff;
-    text-shadow: 0 0 5px #f4c803,
-    0 0 25px #f4c803,
-    0 0 50px #f4c803,
-    0 0 100px #f4c803;
-  
-  
   }
   .buttonV{
     @include BotonMain;
@@ -185,19 +182,11 @@ body{
   }
   
   #formContacto{
-    width: 75%;
-    margin-bottom: 5%;
-    margin-top: 5%;
-    padding: 40px 50px;
-    box-shadow:0 0 10px rgba(0,0,0,0.2) ;
-    backdrop-filter: blur(20px);
-    background-color: transparent;
-    border: 2px solid rgba( 255, 255, 255,0.2);
-    border-radius: 10px;
+    @include FormsdeContacto;
   }
 
   .textContactos{
-   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-family: $font-Secondary;
    font-size: larger;
    text-align: center;
    text-shadow: 1px 1px 1px 1px color#000000;
@@ -205,13 +194,8 @@ body{
   
 
   #fondoContact{
-    background-image:url(../imagenes/pexels-tamanna-rumee-52377920-7984845.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    z-index: 2;
-  
+    @include  BgForms;
+    
   
   }
   
@@ -465,7 +449,7 @@ body{
     margin: auto;
      
       .cajaref-container .cajaref1{
-        font-family: 'Times New Roman', Times, serif;
+        font-family: $font-Default;
         font-weight: bold;
         text-align: center;
         padding: 2rem 2rem;
@@ -581,25 +565,25 @@ body{
    .TituloeServ{
 
     @include AnimatedTitle;
+      
+      ul{
+        position: absolute;
+        margin-top: 5px;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex; 
+      }
+           li{
+            list-style: none;
+            font-weight: 500;
+            font-size: 5vw;
+            letter-spacing: 2.5vw;
+            color: $animLetersbg;
+            text-shadow: none;
+            animation: anim 1s infinite linear;
+          }
     
-  }
-  .TituloeServ ul{
-    position: absolute;
-    margin-top: 5px;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex; 
-  }
-  .TituloeServ ul li{
-    list-style: none;
-    font-weight: 500;
-    font-size: 5vw;
-    letter-spacing: 2.5vw;
-    color: $animLetersbg;
-    text-shadow: none;
-    animation: anim 1s infinite linear;
-  
   }
   
   @keyframes anim {
@@ -734,209 +718,4 @@ body{
     border: 1px solid rgb(7, 7, 7);
   }
 
-  /* Responsive agenda*/
-  @media screen and (max-width: 992px){
-    .container2{
-      display:grid;
-      grid-template-columns:repeat(1,100%);
-      
-      justify-content: center;
-      align-items: center;
-      height: auto;
-      width: 80%;
-      margin: auto;
-      margin-bottom: 35px;
-
-    }
-    .box-info2{
-      width: 100%;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-      margin: auto;
-      margin-bottom: 25px;
-    }
-  }
-    @media screen and (max-width: 490px){
-      .container2{
-        display:grid;
-        grid-template-columns:repeat(1,100%);
-        
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        width: 80%;
-        margin: auto;
-        margin-bottom: 35px;
-        
-  
-      }
-      .box-info2{
-        width: 100%;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        margin: auto;
-        margin-bottom: 25px;
-        font-size: 14px;
-
-      }
-      .box-info2 h1{
-        text-align: center;
-
-      }
-      
-  }
-  /* Responsive Referencias*/
-  @media screen and (max-width: 992px){
-    .body{
-      overflow-x: hidden;
-
-
-    }
-    .Referencias{
-      display: grid;
-      grid-template-columns: repeat(1,600px);
-      grid-gap: 1rem;
-      justify-items: center;
-      justify-content: center;
-      text-align: center;
-      margin: auto;
-      height: auto;
-      
-    }
-    .cajaref1{
-      width: auto;
-
-
-    }
-    
-    .TituloeRef{
-      display: grid;
-      grid-template-columns: repeat(1,100%);
-      text-align: center;
-      color: $whiteleters;
-      
-    }
-    @keyframes show {
-      from{
-        opacity: 0;
-        scale: 25%;
-      }
-      
-      to{ 
-        opacity: 1;
-        scale: 80%;
-    
-      }
-    
-    }
-    
-    .cajaref1 {
-      view-timeline-name: --image;
-      view-timeline-axis: block;
-      
-      animation-timeline: --image;
-      animation-name: show;
-  
-      animation-range: entry 25% cover 50%;
-      animation-fill-mode: both;
-    
-    }
-
-  }
-  @media screen and (max-width:576px){
-    .body{
-      overflow-x: hidden;
-      
-    }
-    .Referencias{
-      display: grid;
-      grid-template-columns: repeat(1,600px);
-      grid-gap: 1rem;
-      justify-items: center;
-      justify-content: center;
-      text-align: center;
-      margin: auto;
-      height: auto;
-      
-    }
-    .cajaref1{
-      width: 15%;
-      height: auto;
-
-
-    }
-    @keyframes show {
-      from{
-        opacity: 0;
-        scale: 15%;
-      }
-      
-      to{ 
-        opacity: 1;
-        scale: 80%;
-    
-      }
-    
-    }
-    
-    .cajaref1 {
-      view-timeline-name: --image;
-      view-timeline-axis: block;
-      
-      animation-timeline: --image;
-      animation-name: show;
-  
-      animation-range: entry 25% cover 50%;
-      animation-fill-mode: both;
-    
-    }
-
-  }
-
-   /* Responsive Services*/
-
-   @media screen and (max-width: 992px){
-    .CWH2{
-      align-items: center;
-      justify-content: center;
-      margin: auto;
-      margin-bottom: 5%;
-      width: 60%;
-      height: 40%;
-      margin-top: 8%;
-      
-    }
-    .servMains{
-      align-items: center;
-      justify-content: center;
-      
-    }
-    .col2{
-      margin-bottom: 8%;
-
-    }
-    .card-body h5{ 
-      font-size:35px;
-      margin-bottom: 3%;
-    }
-    .card-body{ 
-      font-size:25px;
-      height: min-content;
-    }
-    .TituloeServ ul li{
-      margin-top: 8%;
-      list-style: none;
-      font-weight: 500;
-      font-size: 9vw;
-      letter-spacing: 2.5vw;
-  }
-    .btonServ a{
-      font-size: 27px;
-      align-items: center;
-      margin-bottom: 2%;
-      
-    }
-  }
-   
+  @import "mediaquerie";
