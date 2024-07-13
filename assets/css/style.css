@@ -1,3 +1,7 @@
+/*Colores*/
+/*Mixin generales*/
+/*Mixing titulos Animados*/
+/*Mixin especificos*/
 body {
   min-height: 100vh;
   overflow-x: hidden;
@@ -45,10 +49,9 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: solid;
-  color: #000000;
+  color: black;
   text-shadow: 0 0 5px #141414, 0 0 25px #969191, 0 0 50px #969191, 0 0 100px #000000;
 }
-
 .carousel-caption p {
   width: 70%;
   margin: auto;
@@ -57,14 +60,13 @@ body {
   font-size: 30px;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
-  color: #f8f2f2;
+  color: #fff;
   text-shadow: 0 0 5px #141414, 0 0 25px #111111, 0 0 50px #111111, 0 0 100px #f1efef;
   cursor: pointer;
   text-transform: uppercase;
   transition: 1sg;
 }
-
-.carousel img {
+.carousel-caption img {
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(20px);
   opacity: 0.9;
@@ -131,7 +133,7 @@ video {
   font-size: 2.5rem;
   font-weight: 900;
   font-family: "Times New Roman", Times, serif;
-  color: #000000;
+  color: black;
   text-shadow: 2px 1px 1px 1px;
   text-align: center;
   cursor: pointer;
@@ -168,7 +170,6 @@ video {
   transition: all 0.5s;
   box-shadow: 1px 1px 1px black;
 }
-
 .buttonV:hover {
   background-position: 100%;
 }
@@ -194,19 +195,17 @@ video {
   transition: 0.5s ease;
   cursor: pointer;
 }
-
 .card p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.card:hover {
+  transform: scale(1.15);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
 
 .CWH {
   width: 350px;
   height: 600px;
-}
-
-.card:hover {
-  transform: scale(1.15);
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
 
 #formContacto {
@@ -363,7 +362,7 @@ video {
 
 .optionClass {
   text-align: center;
-  color: #000000;
+  color: black;
 }
 
 .TituloeRef {
@@ -371,13 +370,12 @@ video {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   margin: auto;
   margin-top: 6%;
   position: relative;
   text-align: center;
 }
-
 .TituloeRef ul {
   position: absolute;
   margin-top: 45px;
@@ -386,8 +384,7 @@ video {
   transform: translate(-50%, -50%);
   display: flex;
 }
-
-.TituloeRef ul li {
+.TituloeRef li {
   list-style: none;
   font-weight: 500;
   font-size: 6vw;
@@ -479,7 +476,6 @@ video {
   text-align: center;
   margin: auto;
 }
-
 .Referencias .cajaref-container .cajaref1 {
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
@@ -498,35 +494,30 @@ video {
   margin-top: 100px;
   margin-bottom: 40px;
 }
-
-.Referencias .cajaref-container .cajaref1 p {
+.Referencias p {
   font-size: 1.5rem;
   line-height: 1.8;
-  color: #fcfcfc;
+  color: #fff;
   padding: 2rem 2rem;
 }
-
-.Referencias .cajaref-container .cajaref1 .UsuarioRef {
+.Referencias .UsuarioRef {
   height: 7rem;
   width: 7rem;
   border-radius: 50%;
   object-fit: cover;
 }
-
-.Referencias .cajaref-container .cajaref1 h3 {
+.Referencias h3 {
   padding: 1rem 1rem;
   font-size: 2rem;
   color: #fff;
 }
-
-.Referencias .cajaref-container .cajaref1 i {
+.Referencias i {
   padding: 1rem 1rem;
   font-size: 1.1rem;
   text-align: center;
   color: #fff;
 }
-
-.cajaref-container .imgref {
+.Referencias .cajaref-container .imgref {
   align-items: center;
   width: 80px;
   height: 80px;
@@ -593,7 +584,6 @@ video {
   transition: 0.5s ease;
   cursor: pointer;
 }
-
 .card2:hover {
   transform: scale(1.15);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
@@ -616,7 +606,6 @@ video {
   margin-top: 6%;
   position: relative;
   text-align: center;
-  color: #fff;
 }
 
 .TituloeServ ul {
@@ -722,19 +711,16 @@ video {
   height: auto;
   overflow-x: hidden;
 }
-
 .adsSlider .adsSlider-track {
   display: flex;
   -webkit-animation: scroll 40s linear infinite;
   animation: scroll 40s linear infinite;
   width: 2800px;
 }
-
-.adsSlider .adsSlide {
+.adsSlider .adsSlider-track .adsSlide {
   width: 200px;
 }
-
-.adsSlider .adsSlide img {
+.adsSlider .adsSlider-track .adsSlide img {
   width: 100%;
 }
 
