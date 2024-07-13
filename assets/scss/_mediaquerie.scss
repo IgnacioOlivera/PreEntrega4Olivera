@@ -1,0 +1,540 @@
+
+  /* Responsive index*/
+  @media screen and (max-width: 992px){
+
+    *{
+      margin: 0;
+      box-sizing: border-box;
+      
+    }
+    .Idexbody{
+        overflow-x: hidden;
+        min-width: 100%;
+    }
+    .videoClass{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items:center ;
+      width: 100%;
+      margin: 0;
+      position:relative;
+      z-index: 2; 
+      color:$blackleters; 
+      
+         .videoText{ 
+          margin-top: 15%;
+          font-size: 2rem;
+          font-weight: 900;
+          font-family: $font-Default;
+          color:$blackleters ;
+          text-shadow: 2px 1px 1px 1px;
+          text-align: center;
+          cursor: pointer;
+          text-transform: uppercase;
+          transition: 1sg;
+           
+            
+          &:hover{
+            color:#fff;
+            text-shadow: 0 0 5px #f4c803,
+            0 0 25px #f4c803,
+            0 0 50px #f4c803,
+            0 0 100px #f4c803;
+          }
+         }
+     
+    }
+    #videoBack{ 
+      min-height: 100vh;
+      position: relative;
+    }
+    video{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+          
+    }
+    
+    .capa{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height:100%;
+      background-color:1c1c1d;
+      opacity: 1,5;
+      mix-blend-mode: overlay;
+    
+    }
+    .videoMain{ 
+      opacity: 0.9;
+      
+    }
+    .carousel-item{ 
+      width: 100%;
+      height: 50vh;
+      min-height: 300px;
+      border-radius: 5px;
+      border: solid 5px black;
+    }
+    
+    .carousel-caption {
+      h5 {
+      font-size: 30px;
+      font-family: $font-Default;
+      font-weight: normal;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: solid;
+      color:$blackleters ;
+      text-shadow: 0 0 5px #141414,
+      0 0 25px #969191,
+      0 0 50px #969191,
+      0 0 100px #000000;
+      }
+         p{ 
+          width: 60%;
+          margin: auto;
+          font-family: $font-Default;
+          font-weight: 600;
+          font-size: 20px;
+          text-align: center;
+          color:$whiteleters ;
+          text-shadow: 0 0 5px #141414,
+          0 0 25px #111111,
+          0 0 50px #111111,
+          0 0 100px #f1efef;
+          cursor: pointer;
+          text-transform: uppercase;
+          transition: 1sg;
+        
+        }
+        img{
+          
+          box-shadow:5px 5px 5px 5px rgba(0,0,0,0.2) ;
+          backdrop-filter: blur(20px);
+          opacity: 0.9;
+          border-top: 1px solid rgba(3, 3, 3, 0.2);
+          
+  
+        
+        }
+     }
+  
+    .carousel-innier::before{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0, 30, 82, 0.327);
+      z-index: 1;
+    }
+    .carousel-control{ 
+      margin-top: 35px;
+      
+    }
+    .card{
+    align-items:center;
+    margin: 0;
+    margin-left: 12%;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    width: 75%;
+    letter-spacing: 0.1px;
+    box-sizing: border-box;
+    border-radius: 18px;
+    background: $bgwhite;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: 0.5s ease;
+    cursor: pointer;
+      
+  }
+  .card-body h5{
+    font-size: 11px;
+   }
+   .card-body P{
+    font-size: 14px;
+   }
+
+
+  }
+  @media screen and (max-width:576px){
+
+    *{
+      margin: 0;
+      box-sizing: border-box;
+      overflow-x: hidden;
+
+
+    }
+    .videoClass{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items:center ;
+      width: 100%;
+      height: 60%;
+      margin: 0;
+      position:relative;
+      z-index: 2; 
+      color:$blackleters; 
+      
+         .videoText{ 
+          margin-top: 25%;
+          font-size: 1.7rem;
+          font-weight: 900;
+          font-family: $font-Default;
+          color:$blackleters ;
+          text-shadow: 2px 1px 1px 1px;
+          text-align: center;
+          cursor: pointer;
+          text-transform: uppercase;
+          transition: 1sg;
+           
+            
+          &:hover{
+            color:#fff;
+            text-shadow: 0 0 5px #f4c803,
+            0 0 25px #f4c803,
+            0 0 50px #f4c803,
+            0 0 100px #f4c803;
+          }
+         }
+     
+    }
+    #videoBack{ 
+      height: 60%;
+      position: relative;
+    }
+    video{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+          
+    }
+    
+    .capa{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height:100%;
+      background-color:1c1c1d;
+      opacity: 1,5;
+      mix-blend-mode: overlay;
+    
+    }
+    .videoMain{ 
+      opacity: 0.9;
+      
+    }
+    .card{
+    align-items:center;
+    margin: 0;
+    margin-left: 12%;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    width: 70%;
+    letter-spacing: 0.1px;
+    box-sizing: border-box;
+    border-radius: 18px;
+    background: $bgwhite;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    
+  }
+  .card-body h5{
+    font-size: 11px;
+   }
+   .card-body P{
+    font-size: 14px;
+   }
+
+
+  }
+  
+  /* Responsive agenda*/
+  @media screen and (max-width: 992px){
+    .container2{
+      display:grid;
+      grid-template-columns:repeat(1,100%);
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      width: 80%;
+      margin: auto;
+      margin-bottom: 35px;
+
+    }
+    .box-info2{
+      width: 100%;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      margin: auto;
+      margin-bottom: 25px;
+    }
+  }
+    @media screen and (max-width: 490px){
+      .container2{
+        display:grid;
+        grid-template-columns:repeat(1,100%);
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 35px;
+        
+  
+      }
+      .box-info2{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 25px;
+        font-size: 14px;
+
+      }
+      .box-info2 h1{
+        text-align: center;
+
+      }
+      
+  }
+  /* Responsive Referencias*/
+  @media screen and (max-width: 992px){
+    .body{
+      overflow-x: hidden;
+
+    }
+    .Referencias{
+      display: grid;
+      grid-template-columns: repeat(1,600px);
+      grid-gap: 1rem;
+      justify-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+      height: auto;
+      
+    }
+    .cajaref1{
+      width: auto;
+    }
+    
+    .TituloeRef{
+      display: grid;
+      grid-template-columns: repeat(1,100%);
+      text-align: center;
+      color: $whiteleters;
+      
+    }
+    @keyframes show {
+      from{
+        opacity: 0;
+        scale: 25%;
+      }
+      
+      to{ 
+        opacity: 1;
+        scale: 80%;
+    
+      }
+    
+    }
+    
+    .cajaref1 {
+      view-timeline-name: --image;
+      view-timeline-axis: block;
+      
+      animation-timeline: --image;
+      animation-name: show;
+  
+      animation-range: entry 25% cover 50%;
+      animation-fill-mode: both;
+    
+    }
+
+  }
+  @media screen and (max-width:576px){
+    .body{
+        overflow-x: hidden;
+  
+      }
+      .Referencias{
+        display: grid;
+        grid-template-columns: repeat(1,500px);
+        grid-gap: 1rem;
+        justify-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        height: auto;
+        
+      }
+      .cajaref1{
+        width: auto;
+      }
+      
+      .TituloeRef{
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        text-align: center;
+        color: $whiteleters;
+        
+      }
+      @keyframes show {
+        from{
+          opacity: 0;
+          scale: 25%;
+        }
+        
+        to{ 
+          opacity: 1;
+          scale: 60%;
+      
+        }
+      
+      }
+      
+      .cajaref1 {
+        view-timeline-name: --image;
+        view-timeline-axis: block;
+        
+        animation-timeline: --image;
+        animation-name: show;
+    
+        animation-range: entry 25% cover 50%;
+        animation-fill-mode: both;
+      
+      }
+  
+    }
+
+ /* Responsive Services*/
+
+ @media screen and (max-width: 992px){
+    .CWH2{
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      margin-bottom: 5%;
+      width: 60%;
+      height: 100%;
+      margin-top: 8%;
+      
+    }
+    .servMains{
+      align-items: center;
+      justify-content: center;
+      
+    }
+    .col2{
+      margin-bottom: 8%;
+
+    }
+    .card-body h5{ 
+      font-size:35px;
+      margin-bottom: 3%;
+    }
+    .card-body p{ 
+      font-size:24px;
+      
+    }
+    .TituloeServ ul li{
+      margin-top: 8%;
+      list-style: none;
+      font-weight: 500;
+      font-size: 9vw;
+      letter-spacing: 2.5vw;
+  }
+    .btonServ a{
+      font-size: 25px;
+      align-items: center;
+      margin-bottom: 2%;
+      
+    }
+  }
+  @media screen and (max-width: 576px){
+    .TituloeServ{
+        
+        
+
+        @include AnimatedTitle;
+          
+          ul{
+            position: relative;
+            text-align: center;
+            margin-top: 15%;
+            margin-right: 40%;
+            margin-bottom: auto;
+            font-size: 28px;
+            transform: translate(-50%, -50%);
+            display: flex; 
+          }
+               li{
+                list-style: none;
+                font-weight: 500;
+                font-size: 28px;
+                letter-spacing: 2.5vw;
+                color: $animLetersbg;
+                text-shadow: none;
+                animation: anim 1s infinite linear;
+              }
+        
+      }
+    .CWH2{
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5%;
+        width: 80%;
+        height: 100%;
+        margin-top: 8%;
+        
+      }
+      .servMains{
+        align-items: center;
+        justify-content: center;
+        
+      }
+      .col2{
+        margin-bottom: 8%;
+  
+      }
+      .card-body h5{ 
+        font-size:21px;
+        margin-bottom: 3%;
+      }
+      .card-body p{ 
+        font-size:14px;
+        
+      }
+      .btonServ a{
+        font-size: 18px;
+        align-items: center;
+        margin-bottom: 2%;
+        
+      }
+    }
