@@ -1,0 +1,112 @@
+/*Mixin generales*/
+@mixin bodyMain{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-image:url(../imagenes/solid-concrete-wall-textured-backdrop.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 2;
+   
+}
+
+@mixin CardsMain{
+    align-items:center ;
+    margin-left: 40px;
+    margin-right: 15px;
+    font-weight: normal;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    letter-spacing: 0.1px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    border-radius: 18px;
+    background: $bgwhite;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: 0.5s ease;
+    cursor: pointer;
+
+    
+}
+@mixin CardsSecondary{
+    margin-left: 18%;
+    justify-content: center;
+    font-weight: normal;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    letter-spacing: 0.1px;
+    overflow-x: hidden;
+    border-radius: 18px;
+    background: $bgwhite;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: 0.5s ease;
+    cursor: pointer;
+
+       &:hover{
+        transform: scale(1.15);
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+      }
+  
+  }
+
+
+
+
+/*Mixing titulos Animados*/
+@mixin AnimatedTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    width: 100vw;
+    margin: auto;
+    margin-top:6%;
+    position:relative;
+    text-align: center;
+    
+  
+  }
+/*Mixin especificos*/
+@mixin bannerAds{
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+}
+
+
+@mixin BotonMain{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 9px;
+    width: 145px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fefffe;
+    background-size: 300%;
+    background-image: linear-gradient(to right, #000000,#ac9136,#ac9136,#000000);
+    transition: all .5s;
+    box-shadow: 1px 1px 1px black ;
+
+     &:hover{
+        background-position: 100%;
+      
+      }
+    }
